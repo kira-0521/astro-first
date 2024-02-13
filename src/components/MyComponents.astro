@@ -1,0 +1,14 @@
+---
+import { ReactComponent } from './ReactComponent'
+
+type Props = {
+  name: string
+  age: number
+}
+
+const { name, age } = Astro.props
+---
+
+<div>
+  <ReactComponent name={name} age={age} />
+</div>
